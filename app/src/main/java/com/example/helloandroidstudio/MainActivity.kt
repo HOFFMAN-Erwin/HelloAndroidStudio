@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         tipoDeDato()
 
         sentenciaIf()
+
+        sentenciaWhen()
     }
     private fun variablesYConstantes (){
 
@@ -98,6 +100,44 @@ class MainActivity : AppCompatActivity() {
         }
         else {
             println("$myNumber es mayor que 10 o menor o igual que 5 y no es igual a 53")
+        }
+
+    }
+
+    private fun sentenciaWhen(){
+
+        //Aca vamos a ver la sentencia when
+        val country = "Argentina"
+
+        when(country){
+            "Argentina", "España", "Mexico", "Colombia"->{
+                println("El idioma es español")
+            }"EEUU"->{
+                println("El idioma es ingles")
+            }"Canada"->{
+                println("El idioma es ingles")
+            }else ->{
+                println("No conocemos el idioma")
+            }
+        }
+
+        val age = 10
+
+        when(age){
+            0,1,2->{
+                println("Eres un bebe.")
+            }in 3 .. 10 ->{
+                println("Eres un niño.")
+            }in 11 .. 17 ->{
+                println("Eres un adolescente.")
+            }in 18 .. 69 ->{
+                println("Eres un adulto.")
+            }in 70 .. 99 ->{
+                println("Eres un anciano.")
+            }Else ->{
+                println(":c")
+            }
+
         }
 
     }
