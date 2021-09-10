@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
                 println("Eres un adulto.")
             }in 70 .. 99 ->{
                 println("Eres un anciano.")
-            }Else ->{
+            }else ->{
                 println(":c")
             }
 
