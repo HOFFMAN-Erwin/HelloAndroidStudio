@@ -8,14 +8,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //variablesYConstantes()
+        variablesYConstantes()
 
         tipoDeDato()
+
+        sentenciaIf()
     }
-   /* private fun variablesYConstantes (){
+    private fun variablesYConstantes (){
 
         //VARIABLES
-        var myFirstVariable = "Hello hackerman";
+        var myFirstVariable = "Hello hackerman"
 
         println(myFirstVariable)
 
@@ -37,11 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         println(myFirstConstant)
 
-        val mySecondConstant:string = myFirstVariable
+        val mySecondConstant = myFirstVariable
 
-        printLn(mySecondConstant)
+        println(mySecondConstant)
 
-    }*/
+    }
     //tipos de datos
     private fun tipoDeDato(){
         //string
@@ -59,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
        //decimales (float,double)
 
-       val myFloat:float= 1.5f
+       val myFloat = 1.5f
        val myDouble = 1.5
        val myDouble2 = 2.6
        val myDouble3 = 1
@@ -72,6 +74,20 @@ class MainActivity : AppCompatActivity() {
        val myBool2 = false
        println(myBool==myBool2)
        println(myBool&&myBool2)
+
+    }
+
+    //Condicional IF
+
+    private fun sentenciaIf(){
+
+        val myNumber = 10
+
+        if (myNumber < 10) {
+            println("$myNumber es menor que 10")
+        } else {
+            println("$myNumber es mayor que 10")
+        }
 
     }
 }
