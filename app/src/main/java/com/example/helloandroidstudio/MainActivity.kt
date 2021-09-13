@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         sentenciaIf()
 
         sentenciaWhen()
+
+        arrays()
     }
     private fun variablesYConstantes (){
 
@@ -139,6 +141,57 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+    }
+
+    fun arrays(){
+
+        val name = "Erwin"
+        val surename = "Hoffman"
+        val company = "Mater"
+        val age = "32"
+
+        val myArray = arrayListOf<String>()
+
+        //añadir datos de uno en uno
+
+        myArray.add(name)
+        myArray.add(surename)
+        myArray.add(company)
+        myArray.add(age)
+
+        println(myArray)
+
+        //Añadir un conjunto de datos
+        myArray.addAll(listOf("Hola","Practicando Android"))
+
+        println(myArray)
+
+        //Acceso a datos
+        val myCompany = myArray[2]
+        println(myCompany)
+
+        //Modificacion de datos
+        myArray[5] = "Aca antes decia practicando android"
+        println(myArray)
+
+        //Eliminar datos
+        myArray.removeAt(4)
+        println(myArray)
+
+        //Recorrer datos
+        myArray.forEach {
+            println(it)
+        }
+
+        //Otras operaciones
+        myArray.count()
+        myArray.clear()
+        myArray.first()
+        myArray.last()
+        myArray.sort()
+
+
 
     }
 
