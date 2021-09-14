@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         sentenciaWhen()
 
         arrays()
+
+        maps ()
     }
     private fun variablesYConstantes (){
 
@@ -193,6 +195,36 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    fun maps() {
+
+        //sintaxis
+        var myMap: Map<String,Int> = mapOf()
+        println(myMap)
+
+        //Añadir elemento
+        myMap = mutableMapOf("Erwin" to 1, "Pedro" to 2, "Marcia" to 5)
+
+        //Añadir un solo valor
+        myMap["Ana"] = 7
+        myMap.put("Maria",8)
+        println(myMap)
+
+        //Actualizacion de un dato
+        myMap.put("Erwin",3)
+        myMap["Erwin"]= 5
+        println(myMap)
+
+        myMap.put("Marcos",3)
+        println(myMap)
+
+        //Acceso a un dato
+        println(myMap["Erwin"])
+
+        //Eliminar un dato
+        myMap.remove("Erwin")
+        println(myMap)
     }
 
 }
