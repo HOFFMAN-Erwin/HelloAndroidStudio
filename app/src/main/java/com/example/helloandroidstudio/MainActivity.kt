@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         maps ()
 
         loops()
+
+        nullSafety()
     }
     private fun variablesYConstantes (){
 
@@ -269,4 +271,35 @@ class MainActivity : AppCompatActivity() {
             x += 2
         }
     }
+    //Seguridad contra nulos
+    fun nullSafety(){
+
+        var myString="Colorr"
+        //myString = null   Esto daria un error de compilacion
+        println(myString)
+        //variable null safety
+        var mySafetyString:String? = "ColorDev null safety"
+        mySafetyString=null
+        println(mySafetyString)
+
+       /* if(mySafetyString != null){
+            println(mySafetyString!!)
+        } else{
+            println(mySafetyString)
+        }
+
+        //safe call
+        println(mySafetyString?.length)
+
+        mySafetyString?.let {
+            println(it)
+        }?: kotlin.run {
+            println(mySafetyString)
+        }*/
+    }
 }
+
+
+
+
+
