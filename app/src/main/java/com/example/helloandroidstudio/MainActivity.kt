@@ -337,6 +337,44 @@ class MainActivity : AppCompatActivity() {
         return sum
     }
 
+    /*fun funciones (){
+        sayHello()
+        sayHello()
+        sayHello()
+
+        sayMyName("Erwin")
+        sayMyName("Pedro")
+        sayMyName("Lucia")
+
+        sayMyNameAndAge("Erwin", 27)
+
+        val sumResult = sumTwoNumbers(10,5)
+        println(sumResult)
+
+        println(sumTwoNumbers(15,9))
+
+        println(sumTwoNumbers(10, sumTwoNumbers(5,5)))
+
+    }
+    //funcion simple
+    fun sayHello (){
+        println("Hola!")
+    }
+    //funcion con un parametro de entrada
+    fun sayMyName(name: String){
+        println("Hola mi nombre es $name")
+    }
+    //funcion con mas de un parametro de entrada
+    fun sayMyNameAndAge(name: String, age: Int){
+        println("Hola mi nombre es $name y mi edad es $age")
+    }
+
+    //funcion con valor de retorno
+    fun sumTwoNumbers (firstNumber: Int, secondNumber: Int) : Int {
+        val sum = firstNumber+secondNumber
+        return sum
+    }*/
+
 }
 
 
