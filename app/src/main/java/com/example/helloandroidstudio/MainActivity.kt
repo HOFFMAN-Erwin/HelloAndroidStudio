@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         nullSafety()
 
         funciones()
+
+        classes()
     }
     private fun variablesYConstantes (){
 
@@ -374,6 +376,19 @@ class MainActivity : AppCompatActivity() {
         val sum = firstNumber+secondNumber
         return sum
     }*/
+
+    fun classes(){
+    val Erwin = Programmer("Erwin", 27, arrayOf(Programmer.Languaje.KOTLIN,Programmer.Languaje.SWIFT))
+        println(Erwin.name)
+
+        Erwin.age = 45
+        Erwin.code()
+
+        val Sara = Programmer("Sara", 25, arrayOf(Programmer.Languaje.JAVASCRIPT), arrayOf(Erwin))
+        Sara.code()
+
+        println("${Sara.friends?.first()?.name} es amigo de ${Sara.name}")
+    }
 
 }
 
